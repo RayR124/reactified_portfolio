@@ -4,12 +4,17 @@ import Works from './Works';
 
 function App() {
   return (
-    <div className="navbar">
+    <div className="home">
       <Navbar />
-      <Home />
-      <Works />
+      <div className="navbar">
+        <Home />
+        <div className="links">
+          <Works />
+        </div>
+      </div>
     </div>
   );
 }
+
 
 export default App;

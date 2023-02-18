@@ -1,8 +1,8 @@
 const Navbar = () => {
     return (
-        <nav className="directory">
+        <nav className="links">
             <h1 style={{ color: "blue", fontWeight: "largest" }}>
-                Directory
+                Directory:
             </h1>
             <div className="links">
                 <a href="/">Home</a>

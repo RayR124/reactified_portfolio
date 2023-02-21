@@ -1,18 +1,22 @@
-const Navbar = () => {
+import React from "react";
+
+function Navbar(props) {
     return (
         <nav className="links">
-            <h1 style={{ color: "blue", fontSize: 30 }}>
+            <h1 style={{ color: "blue", fontSize: 30, marginBottom: 10 }}>
                 Directory:
             </h1>
-            <div className="links">
-                <a href="#">Home</a>
-                <div className="links">
-                    <a href="#AboutMe">About Me</a>
-                    <div className="links">
-                        <a href="#Works">My Projects</a>
-                    </div>
-                </div>
-            </div>
+            <ul>
+                <li className="links">
+                    <a href="#" onClick={props.toggleHome} style={{ borderBottom: "1px solid #f2f2f2" }}>Home</a>
+                </li>
+                <li className="links">
+                    <a href="#" onClick={props.toggleAboutMe} style={{ borderBottom: "1px solid #f2f2f2" }}>About Me</a>
+                </li>
+                <li className="links">
+                    <a href="#" onClick={props.toggleWorks} style={{ borderBottom: "1px solid #f2f2f2" }}>Works</a>
+                </li>
+            </ul>
         </nav>
     );
 }

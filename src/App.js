@@ -9,22 +9,19 @@ function App() {
   const [aboutMeVisible, setAboutMeVisible] = useState(false);
   const [worksVisible, setWorksVisible] = useState(false);
 
-  function toggleHome(e) {
-    e.preventDefault();
+  function toggleHome() {
     setHomeVisible(true);
     setAboutMeVisible(false);
     setWorksVisible(false);
   }
 
-  function toggleAboutMe(e) {
-    e.preventDefault();
+  function toggleAboutMe() {
     setHomeVisible(false);
     setAboutMeVisible(true);
     setWorksVisible(false);
   }
 
-  function toggleWorks(e) {
-    e.preventDefault();
+  function toggleWorks() {
     setHomeVisible(false);
     setAboutMeVisible(false);
     setWorksVisible(true);
@@ -32,14 +29,14 @@ function App() {
 
   return (
     <div className="directory">
-      <Navbar />
-      <div className={`home ${homeVisible ? "" : "hidden"}`} onClick={() => { toggleHome() }}>
+      <Navbar toggleHome={toggleHome} toggleAboutMe={toggleAboutMe} toggleWorks={toggleWorks} />
+      <div className={`home ${homeVisible ? "" : "hidden"}`}>
         <Home />
       </div>
-      <div className={`aboutMe ${aboutMeVisible ? "" : "hidden"}`} onClick={() => { toggleAboutMe() }}>
+      <div className={`aboutMe ${aboutMeVisible ? "" : "hidden"}`}>
         <AboutMe />
       </div>
-      <div className={`works ${worksVisible ? "" : "hidden"}`} onClick={() => { toggleWorks() }}>
+      <div className={`works ${worksVisible ? "" : "hidden"}`}>
         <Works />
       </div>
     </div>

@@ -63,6 +63,13 @@ body {
   display: none;
 }
 
+.home {
+  font-size: larger;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .aboutMe {
   font-size: larger;
   text-align: center;
@@ -72,23 +79,43 @@ body {
 
 .works {
   font-size: larger;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
+  font-family: inherit;
+  font-size: medium;
+  margin: 1em;
+  border-radius: 9px;
+  border: 5;
+  height: 3em;
+  width: 10em;
+  background-color: #c1c0c02b;
+  color: aliceblue;
+}
+
+.button:hover {
+  background-color: #f1356d;
+  cursor: pointer;
+}
+
+.troll {
   font-family: inherit;
   font-size: small;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: .5em;
+  margin: 1em;
   border-radius: 9px;
-  border: none;
-  height: 2em;
+  border: 5;
+  height: 3em;
   width: 10em;
   background-color: #c1c0c02b;
   color: aliceblue;
 }
-.button:hover {
-  background-color: darkgray;
+.troll:hover {
+  background-color: #f1356d;
   cursor: pointer;
 }

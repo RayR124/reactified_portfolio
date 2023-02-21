@@ -1,10 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-/* base styles */
+@media screen and (max-width: 700px) {
+  .header {
+      overflow: hidden;
+      background-color: #fff;
+      padding: 20px 150px;
+      height: auto;
+  }
+}
+
 * {
   margin: 0;
   font-family: "Quicksand";
   color: #333;
+}
+
+body {
+  display:block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background: #222;
+  background-image: url("https://source.unsplash.com/1600x900/?code");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .links {
@@ -20,11 +41,14 @@
   color: #f1356d;
 }
 
-.links .links {
+.links {
   margin-left: auto;
 }
 
 .links a {
+  color: white;
+  font-size: large;
+  font-weight: 500;
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
@@ -32,4 +56,8 @@
 
 .links a:hover {
   color: #f1356d;
+}
+
+.hidden {
+  visibility: hidden;
 }

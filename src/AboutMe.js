@@ -2,7 +2,7 @@ import { useState } from 'react';
 import raze from './RazeLogo.png';
 
 const AboutMe = () => {
-    const [blurb, setBlurb] = useState('...');
+    const [blurb] = useState();
 
     return (
         <div className="aboutMe" key={blurb} style={{ marginRight: 25 }}>

@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TK from './assets/TKscreenshot.png';
 import MM from './assets/MMscreenshot.png';
 import GH from './assets/GHscreenshot.png';
 
 const Works = () => {
+    const [showTK, setShowTK] = useState(false);
+    const [showMM, setShowMM] = useState(false);
+    const [showGH, setShowGH] = useState(false);
+
+    function toggleTK() {
+        setShowTK(true);
+    }
+
+    function toggleMM() {
+        setShowMM(true);
+    }
+
+    function toggleGH() {
+        setShowGH(true);
+    }
+
     return (
         <div className="works" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginRight: 25 }}>
             <h2 style={{ color: "gray" }}>
@@ -14,7 +30,7 @@ const Works = () => {
                     Taylor's Kitchen
                 </li>
 
-                <ul style={{ color: "white", marginBottom: 20 }}>
+                <ul showTK={`TK ${showTK ? "Click to read more about Taylor's Kitchen." : "Click again to hide the description."}`} style={{ color: "white", marginBottom: 20 }}>
                     Taylor's Kitchen is our first Group Project from my BootCamp at UC Berkeley Extension. Our group members were myself, <a style={{ color: "white" }} href="https://github.com/isayahdurst">Isayah Durst</a>, <a style={{ color: "white" }} href="https://github.com/frankmng">Frank Nguyen</a>, <a style={{ color: "white" }} href="https://github.com/lunchtimewhee">Anthony Li</a> ,and <a style={{ color: "white" }} href="https://github.com/Ahneb">Benjamin Ha</a>. It is a meal planning application wherein you can create a meal plan that's tailored to your specific diet preferences. Taylor's Kitchen allows you to customize your diets, cuisines, and food intolerances to your liking to recommend foods and recipes that compliment your tastes and needs.
                 </ul>
 

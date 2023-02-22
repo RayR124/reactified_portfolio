@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './Logo.png';
+import logo from './assets/rotatinglogo.gif';
 
 const Home = () => {
 
@@ -24,12 +24,12 @@ const Home = () => {
             <ul style={{ color: "white", marginBottom: 15, fontSize: 20, fontWeight: 700 }}>
                 <ul style={{ color: "white", marginBottom: 15, fontSize: 20, fontWeight: 700 }}>Hi, I'm Ray. And this is my Portfolio Web Page.
                 </ul>
-                <ul style={{ color: "white", marginBottom: 15, fontSize: 20, fontWeight: 700 }}>
+                <ul style={{ color: "white", marginBottom: 1, fontSize: 20, fontWeight: 700 }}>
                     Please note the dynamic changing background. This is sort of my calling-card for web pages in this early stage of my development as a software engineer. It is a feature I came up with and and quite proud of. Go ahead and refresh the page to give it a go!
                 </ul>
             </ul>
 
-            <img src={logo} alt="Raze Games" />
+            <img style={{ height: 350, width: "auto" }} src={logo} alt="Raze Games" />
 
             <button onClick={(e) => {
                 e.preventDefault();

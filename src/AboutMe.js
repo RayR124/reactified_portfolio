@@ -34,7 +34,7 @@ const AboutMe = () => {
             </li>
 
             <li style={{ color: "white", marginBottom: 15 }}>
-                One day, the world will be introduced to Raze Games. And for all my doubts, that day can not
+                One day, the world will be introduced to <span style={{ color: "#f1356d", fontWeight: 600 }}>Raze Games</span>. And for all my doubts, that day can not
                 come soon enough!
             </li>
             <img src={raze} alt="Raze Games"/>

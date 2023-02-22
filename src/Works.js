@@ -5,7 +5,7 @@ const Works = () => {
                 My Work:
             </h2>
             <div>
-                <li style={{ color: "#f1356d" }}>
+                <li style={{ color: "#f1356d", fontWeight: 600 }}>
                     Taylor's Kitchen
                 </li>
 
@@ -22,7 +22,7 @@ const Works = () => {
                     window.location.href = "https://isayahdurst.github.io/taylors-kitchen-meal-prep-app/";
                 }} className="button">View Taylor's Kitchen</button>
 
-                <li style={{ color: "#f1356d" }}>
+                <li style={{ color: "#f1356d", fontWeight: 600 }}>
                     Media Map
                 </li>
 
@@ -40,7 +40,7 @@ const Works = () => {
                     window.location.href = "https://media-map-app.herokuapp.com/";
                 }} className="button">View Media Map</button>
 
-                <li style={{ color: "#f1356d" }}>
+                <li style={{ color: "#f1356d", fontWeight: 600 }}>
                     Ray's GitHub Repo
                 </li>
 

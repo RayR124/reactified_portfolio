@@ -33,8 +33,8 @@ const Home = () => {
 
             <button onClick={(e) => {
                 e.preventDefault();
-                window.location.href = 'https://www.publicationcoach.com/better-at-following-directions';
-            }} className="troll">Don't Click this button.</button>
+                window.open('https://www.publicationcoach.com/better-at-following-directions', '_blank', 'noreferrer');
+            }} className="troll" target="_blank" rel="noreferrer">Don't Click this button.</button>
         </div>
     );
 }

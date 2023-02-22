@@ -1,3 +1,8 @@
+import React from 'react';
+import TK from './assets/TKscreenshot.png';
+import MM from './assets/MMscreenshot.png';
+import GH from './assets/GHscreenshot.png';
+
 const Works = () => {
     return (
         <div className="works" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginRight: 25 }}>
@@ -17,10 +22,9 @@ const Works = () => {
                     Taylor's Kitchen was built using two different server-side APIs and is a complete front-end solution. Without having access to a back-end, we've leveraged local-storage and third-party data storage solutions to bring this project to life and create something that we found to be challenging, exciting, and useful.
                 </ul>
 
-                <button onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = "https://isayahdurst.github.io/taylors-kitchen-meal-prep-app/";
-                }} className="button">View Taylor's Kitchen</button>
+                <a href="https://isayahdurst.github.io/taylors-kitchen-meal-prep-app/" onClick={(e) => e.preventDefault()}>
+                    <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25 }} src={TK} alt="Click to visit Taylor's Kitchen" />
+                </a>
 
                 <li style={{ color: "#f1356d", fontWeight: 600 }}>
                     Media Map
@@ -35,10 +39,9 @@ const Works = () => {
                     Gone will be the days where clickbait articles and misleading titles give you false or misleading Google search results. This app will tell you straight forward search results, where you can watch your favorite movies with ease and without having to sift through convoluted and fluffed up articles.
                 </ul>
 
-                <button onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = "https://media-map-app.herokuapp.com/";
-                }} className="button">View Media Map</button>
+                <a href="https://media-map-app.herokuapp.com/" onClick={(e) => e.preventDefault()}>
+                    <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25 }} src={MM} alt="Click to visit Media Map" />
+                </a>
 
                 <li style={{ color: "#f1356d", fontWeight: 600 }}>
                     Ray's GitHub Repo
@@ -48,10 +51,9 @@ const Works = () => {
                     Click the button below to be taken directly to my GitHub Repository wherein you can see all of the projects I've worked on. Feel free to leave feedback on anything, any and all criticism, be it harsh or constructive, is welcome!
                 </ul>
 
-                <button onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = "https://github.com/RayR124";
-                }} className="button">Visit Ray's GitHub</button>
+                <a href="https://github.com/RayR124" onClick={(e) => e.preventDefault()}>
+                    <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25 }} src={GH} alt="Click to visit Media Map" />
+                </a>
             </div>
         </div>
     )

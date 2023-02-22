@@ -1,7 +1,10 @@
+import React from 'react';
+import logo from './Logo.png';
+
 const Home = () => {
 
     return (
-        <div className="home" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+        <div className="home" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginRight: 25 }}>
             <h1 style={{ color: "blue", marginBottom: 20, fontSize: 45 }}>
                 Ray's <span style={{ color: "#f1356d" }}>Portfolio</span> Web Page
             </h1>
@@ -11,9 +14,15 @@ const Home = () => {
             </h2>
 
             <p style={{ color: "white", marginBottom: 15, fontSize: 20, fontWeight: 700 }}>
-                Hi, I'm Ray. And this is my Portfolio Web Page.
+                <ul style={{ color: "white", marginBottom: 15, fontSize: 20, fontWeight: 700 }}>Hi, I'm Ray. And this is my Portfolio Web Page. 
+                </ul>
+                <ul style={{ color: "white", marginBottom: 15, fontSize: 20, fontWeight: 700 }}>
+                Please note the dynamic changing background. This is sort of my calling-card for web pages in this early stage of my development as a software engineer. It is a feature I came up with and and quite proud of. Go ahead and refresh the page to give it a go!
+                </ul>
             </p>
-            
+
+            <img src={logo} alt="Raze Games"/>
+
             <button onClick={(e) => {
                 e.preventDefault();
                 window.location.href = 'https://www.publicationcoach.com/better-at-following-directions';

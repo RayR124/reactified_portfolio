@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import raze from './RazeLogo.png';
 
 const AboutMe = () => {
     const [blurb, setBlurb] = useState('...');
 
     return (
-        <div className="aboutMe" key={blurb}>
+        <div className="aboutMe" key={blurb} style={{ marginRight: 25 }}>
             <h1 style={{ color: "gray", fontSize: 45, marginBottom: 15}}>
                 A little about Me:
                 </h1>
@@ -31,11 +32,12 @@ const AboutMe = () => {
                 public... Sadly, however, my constant need to drive for perfection will always result in finding
                 another flaw, and finding another solution.
             </li>
-            
+
             <li style={{ color: "white", marginBottom: 15 }}>
                 One day, the world will be introduced to Raze Games. And for all my doubts, that day can not
                 come soon enough!
             </li>
+            <img src={raze} alt="Raze Games"/>
         </div>
     );
 }

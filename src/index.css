@@ -73,15 +73,11 @@ body {
 .aboutMe {
   font-size: larger;
   text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
 .works {
   font-size: larger;
   text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
 .button {
@@ -118,4 +114,9 @@ body {
 .troll:hover {
   background-color: #f1356d;
   cursor: pointer;
+}
+
+img {
+  width: auto;
+  height: auto;
 }

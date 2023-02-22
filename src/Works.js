@@ -1,6 +1,6 @@
 const Works = () => {
     return (
-        <div className="works" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+        <div className="works" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginRight: 25 }}>
             <h2 style={{ color: "gray" }}>
                 My Work:
             </h2>
@@ -45,7 +45,7 @@ const Works = () => {
                 </li>
 
                 <ul style={{ color: "white", marginBottom: 20 }}>
-                    Click the button below to be taken directly to my GitHub Repository wherein you can see all of the projects I've worked on. Feel free to leave feedback on anything, any and al criticism, be it harsh or constructive, is welcome!
+                    Click the button below to be taken directly to my GitHub Repository wherein you can see all of the projects I've worked on. Feel free to leave feedback on anything, any and all criticism, be it harsh or constructive, is welcome!
                 </ul>
 
                 <button onClick={(e) => {

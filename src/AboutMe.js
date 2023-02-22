@@ -21,7 +21,7 @@ const AboutMe = () => {
             </li>
 
             <li style={{ color: "white", marginBottom: 15 }}>
-                I have yet to publish any of my 19 original board and/or card games, but I feel I am getting close to completion with at least a couple of them. I am particularly proud of my game called "Vex" which I hope hits the market in some way, shape, or form by next year.
+                I have yet to publish any of my 19 original board and/or card games, but I feel I am getting close to completion with at least a couple of them. I am particularly proud of my game called <a style={{ color: "red" }} href="https://www.thegamecrafter.com/games/vex1">Vex</a> which I hope hits the market in some way, shape, or form by next year.
             </li>
 
             <li style={{ color: "white", marginBottom: 15 }}>

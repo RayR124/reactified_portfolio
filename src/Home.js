@@ -10,7 +10,7 @@ const Home = () => {
             </h1>
 
             <h2 style={{ color: "red", marginBottom: 20, fontSize: 40 }}>
-                Raymond Robinson
+                - Raymond Robinson -
             </h2>
 
             <h3 style={{ color: "blue", marginBottom: 20, fontSize: 30 }}>
@@ -18,16 +18,16 @@ const Home = () => {
             </h3>
 
             <h2 style={{ color: "gray", marginBottom: 15, fontSize: 30 }}>
-                Father, Husband, Coder, Nerd, and Founder of "Raze Games".
+                Father, Husband, Coder, Nerd, and Founder of <span style={{ color: "#f1356d", fontWeight: 800 }}>Raze Games</span>.
             </h2>
 
-            <ul style={{ color: "white", marginBottom: 15, fontSize: 20, fontWeight: 700 }}>
-                <ul style={{ color: "white", marginBottom: 15, fontSize: 20, fontWeight: 700 }}>Hi, I'm Ray. And this is my Portfolio Web Page.
-                </ul>
-                <ul style={{ color: "white", marginBottom: 1, fontSize: 20, fontWeight: 700 }}>
-                    Please note the dynamic changing background. This is sort of my calling-card for web pages in this early stage of my development as a software engineer. It is a feature I came up with and and quite proud of. Go ahead and refresh the page to give it a go!
-                </ul>
+            <ul style={{ color: "white", marginBottom: 15, fontSize: 20, fontWeight: 700, borderBottom: "1px solid #f2f2f2" }}>
+                Hi, I'm Ray. And this is my Portfolio Web Page.
             </ul>
+
+            <li style={{ color: "white", marginBottom: 1, fontSize: 20, fontWeight: 700 }}>
+                Please note the dynamic changing background. This is sort of my calling-card for web pages in this early stage of my development as a software engineer. It is a feature I came up with and and quite proud of. Go ahead and refresh the page to give it a go!
+            </li>
 
             <img style={{ height: 350, width: "auto" }} src={logo} alt="Raze Games" />
 

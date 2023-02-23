@@ -26,7 +26,7 @@ const Home = () => {
             </ul>
 
             <li style={{ color: "white", marginBottom: 1, fontSize: 20, fontWeight: 700 }}>
-                Please note the dynamic changing background. This is sort of my calling-card for web pages in this early stage of my development as a software engineer. It is a feature I came up with and and quite proud of. Go ahead and refresh the page to give it a go!
+                Please note the dynamic changing background. This is sort of my calling-card for web pages in this early stage of my development as a software engineer.<br></br>It is a feature I came up with and and quite proud of.<br></br>Go ahead and <span style={{color: "blue"}}>refresh</span> the page to give it a go!
             </li>
 
             <img style={{ height: 350, width: "auto" }} src={logo} alt="Raze Games" />

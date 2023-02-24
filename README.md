@@ -4,6 +4,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+To view my deployed portfolio web page in all its ever-growing glory, click [here](https://rayr-portfolio.herokuapp.com/).
+
 ## Table of Contents
 
 - [Installation](#installation)

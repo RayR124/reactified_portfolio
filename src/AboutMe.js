@@ -6,7 +6,7 @@ const AboutMe = () => {
 
     return (
         <div className="aboutMe" key={blurb} style={{ marginRight: 25 }}>
-            <h1 style={{ color: "gray", fontSize: 45, marginBottom: 15}}>
+            <h1 style={{ color: "gray", fontSize: 45, marginBottom: 15, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"}}>
                 A little about Me:
                 </h1>
 

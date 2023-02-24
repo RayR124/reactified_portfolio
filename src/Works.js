@@ -22,9 +22,9 @@ const Works = () => {
 
     return (
         <div className="works" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginRight: 25 }}>
-            <h2 style={{ color: 'gray' }}>My Work:</h2>
+            <h2 style={{ color: 'gray', textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>My Work:</h2>
             <div>
-                <li style={{ color: '#f1356d', fontWeight: 600 }}>Taylor's Kitchen</li>
+                <li style={{ color: '#f1356d', fontWeight: 600, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>Taylor's Kitchen</li>
                 <ul style={{ color: 'white', marginBottom: 20 }}
                     onClick={toggleTK}>
                     <li style={{ color: 'white', marginBottom: 20, cursor: "pointer" }}>
@@ -41,7 +41,7 @@ const Works = () => {
                     <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25 }} src={TK} alt="Click to visit Taylor's Kitchen" />
                 </a>
 
-                <li style={{ color: '#f1356d', fontWeight: 600 }}>Media Map</li>
+                <li style={{ color: '#f1356d', fontWeight: 600, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>Media Map</li>
                 <ul style={{ color: 'white', marginBottom: 20 }}
                     onClick={toggleMM}>
                     <li style={{ color: 'white', marginBottom: 20, cursor: "pointer" }}>
@@ -59,7 +59,7 @@ const Works = () => {
                     <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25 }} src={MM} alt="Click to visit Media Map" />
                 </a>
 
-                <li style={{ color: '#f1356d', fontWeight: 600 }}>Ray's GitHub Repository</li>
+                <li style={{ color: '#f1356d', fontWeight: 600, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>Ray's GitHub Repository</li>
                 <ul style={{ color: 'white', marginBottom: 20 }}
                     onClick={toggleGH}>
                     <li style={{ color: 'white', marginBottom: 20, cursor: "pointer" }}>

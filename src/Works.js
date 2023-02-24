@@ -38,7 +38,10 @@ const Works = () => {
                     )}
                 </ul>
                 <a href="https://isayahdurst.github.io/taylors-kitchen-meal-prep-app/" target="_blank" rel="noreferrer">
-                    <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25 }} src={TK} alt="Click to visit Taylor's Kitchen" />
+                    <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25, transition: "transform 0.2s ease-in-out" }} src={TK} alt="Click to visit Taylor's Kitchen" onMouseOver={(e) => {
+                        e.currentTarget.style.transform = "scale(1.1)" }} onMouseOut={(e) => {
+                            e.currentTarget.style.transform = "scale(1)";
+                        }} />
                 </a>
 
                 <li style={{ color: '#f1356d', fontWeight: 600, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>Media Map</li>
@@ -56,7 +59,10 @@ const Works = () => {
                 </ul>
 
                 <a href="https://media-map-app.herokuapp.com/" target="_blank" rel="noreferrer">
-                    <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25 }} src={MM} alt="Click to visit Media Map" />
+                    <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25, transition: "transform 0.2s ease-in-out" }} src={MM} alt="Click to visit Media Map" onMouseOver={(e) => {
+                        e.currentTarget.style.transform = "scale(1.1)" }} onMouseOut={(e) => {
+                            e.currentTarget.style.transform = "scale(1)";
+                        }} />
                 </a>
 
                 <li style={{ color: '#f1356d', fontWeight: 600, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>Ray's GitHub Repository</li>
@@ -74,7 +80,10 @@ const Works = () => {
                 </ul>
 
                 <a href="https://github.com/RayR124" target="_blank" rel="noreferrer">
-                    <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25 }} src={GH} alt="Click to visit Media Map" />
+                    <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25, transition: "transform 0.2s ease-in-out" }} src={GH} alt="Click to visit Media Map" onMouseOver={(e) => {
+                        e.currentTarget.style.transform = "scale(1.1)" }} onMouseOut={(e) => {
+                            e.currentTarget.style.transform = "scale(1)";
+                        }} />
                 </a>
             </div>
         </div>

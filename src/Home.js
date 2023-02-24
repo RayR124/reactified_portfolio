@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="home" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginRight: 25 }}>
             <h1 style={{ color: "blue", marginBottom: 20, fontSize: 45 }}>
-                Ray's <span style={{ color: "#f1356d" }}>Portfolio</span> Web Page
+                Ray's <span style={{ color: "#f1356d", textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>Portfolio</span> Web Page
             </h1>
 
             <h2 style={{ color: "red", marginBottom: 20, fontSize: 40 }}>
@@ -26,7 +26,7 @@ const Home = () => {
             </ul>
 
             <ul style={{ color: "white", marginBottom: 1, fontSize: 20, fontWeight: 700 }}>
-                Please <span style={{ color: "#f1356d" }}>note</span> the dynamic changing background. This is sort of my calling-card for web pages in this early stage of my development as a software engineer.<br></br>It is a feature I came up with and I am quite proud of it.<br></br>Go ahead and <span style={{color: "blue"}}>refresh</span> the page to give it a go!
+                Please <span style={{ color: "#f1356d", textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>note</span> the dynamic changing background. This is sort of my calling-card for web pages in this early stage of my development as a software engineer.<br></br>It is a feature I came up with and I am quite proud of it.<br></br>Go ahead and <span style={{ color: "blue", textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>refresh</span> the page to give it a go!
             </ul>
 
             <img style={{ height: 350, width: "auto" }} src={logo} alt="Raze Games" />

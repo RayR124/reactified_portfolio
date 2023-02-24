@@ -1,14 +1,20 @@
 import { useState } from 'react';
 import raze from './RazeLogo.png';
+import vex from './vexlogo.png';
 
 const AboutMe = () => {
     const [blurb] = useState();
+    const [showVex, setShowVex] = useState(false);
+
+    function toggleVex() {
+        setShowVex(!showVex);
+    }
 
     return (
         <div className="aboutMe" key={blurb} style={{ marginRight: 25 }}>
-            <h1 style={{ color: "gray", fontSize: 45, marginBottom: 15, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"}}>
+            <h1 style={{ color: "gray", fontSize: 45, marginBottom: 15, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>
                 A little about Me:
-                </h1>
+            </h1>
 
             <li style={{ color: "white", marginBottom: 15 }}>
                 I am first and foremost a father to 3 amazing children. Being a father is the only job I take
@@ -24,6 +30,13 @@ const AboutMe = () => {
                 I have yet to publish any of my 19 original board and/or card games, but I feel I am getting close to completion with at least a couple of them. I am particularly proud of my game called <a style={{ color: "red" }} href="https://www.thegamecrafter.com/games/vex1">Vex</a> which I hope hits the market in some way, shape, or form by next year.
             </li>
 
+            <ul style={{ color: 'white', marginBottom: 20, cursor: "pointer" }} onClick={toggleVex}>
+                {showVex ? "Click again to hide the logo." : "Click here to see the Vex logo."}
+            </ul>
+            {showVex && <img style={{ height: 150, width: "auto" }} src={vex} alt="Vex Logo" />}
+
+            <br></br>
+
             <li style={{ color: "white", marginBottom: 15 }}>
                 I thoroughly enjoy puzzle solving and working on my board and card games gives me many creative
                 outlets to solve puzzles, and find unique and enjoyable solutions to problems that rise up
@@ -37,7 +50,7 @@ const AboutMe = () => {
                 One day, the world will be introduced to <span style={{ color: "#f1356d", fontWeight: 600 }}>Raze Games</span>. And for all my doubts, that day can not
                 come soon enough!
             </li>
-            <img src={raze} alt="Raze Games"/>
+            <img src={raze} alt="Raze Games" />
         </div>
     );
 }

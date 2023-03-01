@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import TK from './assets/TKscreenshot.png';
 import MM from './assets/MMscreenshot.png';
 import GH from './assets/GHscreenshot.png';
+import WtW from './assets/WtWscreenshot.png';
 
 const Works = () => {
     const [showTK, setShowTK] = useState(false);
     const [showMM, setShowMM] = useState(false);
     const [showGH, setShowGH] = useState(false);
+    const [showWtW, setShowWtW] = useState(false);
 
     function toggleTK() {
         setShowTK(!showTK);
@@ -20,10 +22,34 @@ const Works = () => {
         setShowGH(!showGH);
     }
 
+    function toggleWtW() {
+        setShowWtW(!showWtW);
+    }
+
     return (
         <div className="works" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginRight: 25 }}>
             <h2 style={{ color: 'gray', textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>My Work:</h2>
             <div>
+                <li style={{ color: '#f1356d', fontWeight: 600, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>Whether the Weather</li>
+                <ul style={{ color: 'white', marginBottom: 20 }}
+                    onClick={toggleWtW}>
+                    <li style={{ color: 'white', marginBottom: 20, cursor: "pointer" }}>
+                        {showWtW ? "Click again to hide the description." : "Click this text to read more about Whether the Weather."}
+                    </li>
+                    {showWtW && (
+                        <li style={{ color: 'white', marginBottom: 20 }}>
+                            I was challenged in this project to create a functional weather app wherein I would call on an API to get the current weather in any given city, as well as provide the weather forecast for the next 5 days in said city. I was motivated to accomplish this task by my peers, they assured me that these are skills I do possess, and by creating this application, I proved both them, and myself, right.<br></br><br></br> I built this project to better my skills using mechanics I was not intimitely familiar with, such as using 3rd party APIs, as well as performing more complex JavaScript to replace various aspects of my HTML. This project solved many problems, the leading one being giving me confidence in my skills and knowledge I didn't have before accomplishing this goal. I learned so much in this project! I learned how to modify classes in HTML with JS, I learned and/or functions, I learned how to implement APIs as well as various aspects of Bootstrap to aid with my design in my CSS, I learned how to stringify arrays with JSON and how to pull specific information from them. All of these are very important and vital skills to know when working with JS.
+                        </li>
+                    )}
+                </ul>
+                <a href="https://rayr124.github.io/whether_the_weather/" target="_blank" rel="noreferrer">
+                    <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25, transition: "transform 0.2s ease-in-out" }} src={WtW} alt="Click to visit Whether the Weather" onMouseOver={(e) => {
+                        e.currentTarget.style.transform = "scale(1.1)"
+                    }} onMouseOut={(e) => {
+                        e.currentTarget.style.transform = "scale(1)";
+                    }} />
+                </a>
+
                 <li style={{ color: '#f1356d', fontWeight: 600, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>Taylor's Kitchen</li>
                 <ul style={{ color: 'white', marginBottom: 20 }}
                     onClick={toggleTK}>
@@ -39,9 +65,10 @@ const Works = () => {
                 </ul>
                 <a href="https://isayahdurst.github.io/taylors-kitchen-meal-prep-app/" target="_blank" rel="noreferrer">
                     <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25, transition: "transform 0.2s ease-in-out" }} src={TK} alt="Click to visit Taylor's Kitchen" onMouseOver={(e) => {
-                        e.currentTarget.style.transform = "scale(1.1)" }} onMouseOut={(e) => {
-                            e.currentTarget.style.transform = "scale(1)";
-                        }} />
+                        e.currentTarget.style.transform = "scale(1.1)"
+                    }} onMouseOut={(e) => {
+                        e.currentTarget.style.transform = "scale(1)";
+                    }} />
                 </a>
 
                 <li style={{ color: '#f1356d', fontWeight: 600, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>Media Map</li>
@@ -60,9 +87,10 @@ const Works = () => {
 
                 <a href="https://media-map-app.herokuapp.com/" target="_blank" rel="noreferrer">
                     <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25, transition: "transform 0.2s ease-in-out" }} src={MM} alt="Click to visit Media Map" onMouseOver={(e) => {
-                        e.currentTarget.style.transform = "scale(1.1)" }} onMouseOut={(e) => {
-                            e.currentTarget.style.transform = "scale(1)";
-                        }} />
+                        e.currentTarget.style.transform = "scale(1.1)"
+                    }} onMouseOut={(e) => {
+                        e.currentTarget.style.transform = "scale(1)";
+                    }} />
                 </a>
 
                 <li style={{ color: '#f1356d', fontWeight: 600, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>Ray's GitHub Repository</li>
@@ -81,9 +109,10 @@ const Works = () => {
 
                 <a href="https://github.com/RayR124" target="_blank" rel="noreferrer">
                     <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25, transition: "transform 0.2s ease-in-out" }} src={GH} alt="Click to visit Media Map" onMouseOver={(e) => {
-                        e.currentTarget.style.transform = "scale(1.1)" }} onMouseOut={(e) => {
-                            e.currentTarget.style.transform = "scale(1)";
-                        }} />
+                        e.currentTarget.style.transform = "scale(1.1)"
+                    }} onMouseOut={(e) => {
+                        e.currentTarget.style.transform = "scale(1)";
+                    }} />
                 </a>
             </div>
         </div>

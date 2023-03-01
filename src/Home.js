@@ -25,7 +25,7 @@ const Home = () => {
                 Hi, I'm Ray. And this is my Portfolio Web Page.
             </ul>
 
-            <ul style={{ color: "white", marginBottom: 1, fontSize: 20, fontWeight: 700 }}>
+            <ul style={{ color: "white", fontSize: 20, fontWeight: 700 }}>
                 Please <span style={{ color: "#f1356d", textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>note</span> the dynamic changing background. This is sort of my calling-card for web pages in this early stage of my development as a software engineer.<br></br>It is a feature I came up with and I am quite proud of it.<br></br>Go ahead and <span style={{ color: "blue", textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>refresh</span> the page to give it a go!
             </ul>
 

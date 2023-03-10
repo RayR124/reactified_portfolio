@@ -3,12 +3,14 @@ import TK from './assets/TKscreenshot.png';
 import MM from './assets/MMscreenshot.png';
 import GH from './assets/GHscreenshot.png';
 import WtW from './assets/WtWscreenshot.png';
+import SZ from './assets/SZscreenshot.png';
 
 const Works = () => {
     const [showTK, setShowTK] = useState(false);
     const [showMM, setShowMM] = useState(false);
     const [showGH, setShowGH] = useState(false);
     const [showWtW, setShowWtW] = useState(false);
+    const [showSZ, setShowSZ] = useState(false);
 
     function toggleTK() {
         setShowTK(!showTK);
@@ -26,10 +28,37 @@ const Works = () => {
         setShowWtW(!showWtW);
     }
 
+    function toggleSZ() {
+        setShowSZ(!showSZ);
+    }
+
     return (
         <div className="works" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginRight: 25 }}>
             <h2 style={{ color: 'gray', textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>My Work:</h2>
             <div>
+                <li style={{ color: '#f1356d', fontWeight: 600, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>SafeZone</li>
+                <ul style={{ color: 'white', marginBottom: 20 }}
+                    onClick={toggleSZ}>
+                    <li style={{ color: 'white', marginBottom: 20, cursor: "pointer" }}>
+                        {showSZ ? "Click again to hide the description." : "Click this text to read more about SafeZone."}
+                    </li>
+                    {showSZ && (
+                        <li style={{ color: 'white', marginBottom: 20 }}>
+                            SafeZone can tell you everything you might want to know about your perspective new home and it's neighborhood.
+                            It provides information and reviews about neighborhood crime rates, tells you data on schools in the area, including the public reviews of those schools, and other things like local attractions or places of interest like nearby parks, museums, recreational areas, etc.<br></br><br></br>
+                            SafeZone is and has a very practical application, as someone somewhere is always looking to buy or rent a new home.
+                            Simply type in an address and SafeZone will give you the information in a clean and simple to understand layout. With SafeZone any new home buyer or renter will have a more informed idea of the area in which they're planning to live.
+                        </li>
+                    )}
+                </ul>
+                <a href="https://safezone.herokuapp.com/" target="_blank" rel="noreferrer">
+                    <img style={{ height: 150, width: "auto", marginBottom: 20, borderRadius: 25, transition: "transform 0.2s ease-in-out" }} src={SZ} alt="Click to visit SafeZone" onMouseOver={(e) => {
+                        e.currentTarget.style.transform = "scale(1.1)"
+                    }} onMouseOut={(e) => {
+                        e.currentTarget.style.transform = "scale(1)";
+                    }} />
+                </a>
+
                 <li style={{ color: '#f1356d', fontWeight: 600, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>Whether the Weather</li>
                 <ul style={{ color: 'white', marginBottom: 20 }}
                     onClick={toggleWtW}>
